@@ -69,17 +69,23 @@ pip3 install linode-cli --upgrade
     git clone https://github.com/agylpradipta/terraform-linode-instance-vpc.git
     ```
 
-2. **Initialize Terraform**: Initialize the Terraform working directory.
+2. **Adjust Configuration**: Before initializing Terraform, review and adjust the desired values in the `.tf` files. This includes:
+    - Node labels (e.g., `arp_k8s_worker_1`, `arp_k8s_controlplane_1`)
+    - VPC names (e.g., `ARP-kubeadm-network-01`)
+    - Regions (e.g., `id-cgk`)
+    - Any other configurable parameters
+
+3. **Initialize Terraform**: Initialize the Terraform working directory.
     ```sh
     terraform init
     ```
 
-3. **Plan**: Create an execution plan to check the resources that Terraform will create.
+4. **Plan**: Create an execution plan to check the resources that Terraform will create.
     ```sh
     terraform plan
     ```
 
-4. **Apply**: Apply the changes required to reach the desired state of the configuration.
+5. **Apply**: Apply the changes required to reach the desired state of the configuration.
     ```sh
     terraform apply
     ```
@@ -105,4 +111,4 @@ pip3 install linode-cli --upgrade
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
 
-This updated README includes the additional information about running the `linode-cli linodes types` command, your GitHub profile link, and the repository clone URL. If you need further modifications, please let me know!
+This updated README now includes the step to adjust and check the desired values before initializing Terraform. If you need any more changes, feel free to let me know!
