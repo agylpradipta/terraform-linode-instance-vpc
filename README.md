@@ -17,20 +17,23 @@ This project demonstrates how to deploy Infrastructure as a Service (IaaS) on Li
 
 ## Installation
 
+### Install Terraform
+
 Before setting up the project, ensure Terraform is installed on your local machine. Below are the installation steps for different operating systems:
 
-### macOS
+#### macOS
 ```sh
 brew install terraform
 ```
 
-### Linux
+#### Linux
 Follow the [official guide](https://learn.hashicorp.com/tutorials/terraform/install-cli) for your specific distribution.
 
-### Windows
+#### Windows
 Download the appropriate binary from the [Terraform website](https://www.terraform.io/downloads.html) and follow the installation instructions.
 
-### Linode CLI
+### Install Linode CLI
+
 Install the Linode CLI using pip:
 ```sh
 pip install linode-cli
@@ -111,4 +114,4 @@ pip3 install linode-cli --upgrade
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
 
-This updated README now includes the step to adjust and check the desired values before initializing Terraform. If you need any more changes, feel free to let me know!
+This updated README separates the installation instructions for Terraform and Linode CLI into clear sections, making it easier to follow. If you need any more changes, feel free to let me know!
