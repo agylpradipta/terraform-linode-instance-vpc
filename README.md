@@ -1,4 +1,3 @@
-```markdown
 # Linode IaaS with Terraform
 
 ## Introduction
