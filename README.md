@@ -49,10 +49,8 @@ pip3 install linode-cli --upgrade
 
 2. **Duplicate .bak Files**: There are several files with a `.bak` extension that you need to duplicate and adjust the values accordingly.
 
-    - `ssh_key.pub.bak` -> `ssh_key.pub`
-    - `terraform.tfvars.bak` -> `terraform.tfvars`
-
-    In the `terraform.tfvars` file, replace `"your_linode_token"` with your actual Linode API token.
+    - `ssh_key.pub.bak` -> `ssh_key.pub`: Replace the content of `ssh_key.pub` with your own `id_rsa.pub` to enable SSH authentication to the created servers.
+    - `terraform.tfvars.bak` -> `terraform.tfvars`: In the `terraform.tfvars` file, replace `"your_linode_token"` with your actual Linode API token.
 
 3. **Adjustable Values**: You can modify certain values in the `.tf` files to suit your needs:
     - Node labels (e.g., `arp_k8s_worker_1`, `arp_k8s_controlplane_1`)
@@ -114,4 +112,4 @@ pip3 install linode-cli --upgrade
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
 
-This updated README separates the installation instructions for Terraform and Linode CLI into clear sections, making it easier to follow. If you need any more changes, feel free to let me know!
+This README now includes the explanation for adding `id_rsa.pub` for SSH authentication. If you need any further changes, please let me know!
