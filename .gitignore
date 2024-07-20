@@ -8,10 +8,15 @@ terraform/
 terraform.tfstate
 terraform.tfstate.backup
 
-
 # Ignore other potential sensitive or unnecessary files
 *.tfstate
 *.tfstate.backup
 *.log
-*.bak
 *.tmp
+
+# Ignore all .bak files
+*.bak
+
+# Allow specific .bak files
+!terraform.tfvars.bak
+!ssh_key.pub.bak
